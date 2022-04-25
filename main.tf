@@ -69,7 +69,7 @@ resource "aws_db_parameter_group" "education" {
 resource "aws_db_instance" "education" {
   identifier             = "education"
   instance_class         = "db.t3.micro"
-  allocated_storage      = 5
+  allocated_storage      = 10
   engine                 = "postgres"
   # engine_version         = "13.1"
   username               = "edu"
