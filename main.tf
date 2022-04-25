@@ -22,6 +22,8 @@ resource "aws_db_subnet_group" "education" {
 
   tags = {
     Name = "Education"
+    Owner = "Marco Morales"
+    Created-on = timestamp()
   }
 }
 
@@ -45,6 +47,11 @@ resource "aws_security_group" "rds" {
 
   tags = {
     Name = "education_rds"
+    Owner = "Marco Morales"
+    Created-by = "Marco Morales"
+    Demo = "HashiCorp Webinar"
+    Created-on = "2022-0425"
+
   }
 }
 
